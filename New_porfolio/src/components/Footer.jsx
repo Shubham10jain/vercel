@@ -1,0 +1,35 @@
+import { styles } from '../styles'
+
+/* Logos */
+
+import gitHubLogo from "../assets/github.svg";
+import linkedinLogo from "../assets/linkedin.svg";
+
+const Footer = () => {
+    return (
+      <footer className={`${styles.paddingX} pt-5 pb-3 border-t border-black-300 flex justify-between items-center flex-wrap gap-5`}>
+        <div className="text-white-500 flex gap-2">
+          <p>Terms & Conditions</p>
+          <p>|</p>
+          <p>Privacy Policy</p>
+        </div>
+  
+        <div className="flex gap-3">
+          <a className="social-icon" href="https://github.com/Shubham10Jain" target="_blank" rel="noopener noreferrer">
+            <img src={gitHubLogo} alt="github" className="w-1/2 h-1/2" />
+          </a>
+          <a className="social-icon" href="https://www.linkedin.com/in/shubhamjain1309/" target="_blank" rel="noopener noreferrer">
+            <img src={linkedinLogo} alt="linkedin" className="w-1/2 h-1/2" />
+          </a>
+          <a className="social-icon flex items-center justify-center text-white font-bold" href="mailto:shubham.aryanjain@gmail.com" target="_blank" rel="noopener noreferrer">
+            @
+          </a>
+        </div>
+  
+        <p className="text-white-500">© {new Date().getFullYear()} Shubham Jain. All rights reserved.</p>
+      </footer>
+    );
+  };
+  
+  export default Footer;
+  
